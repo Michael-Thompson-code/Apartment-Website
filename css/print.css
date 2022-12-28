@@ -1,0 +1,8 @@
+@media print {
+  * {
+    color: black !important;
+  }
+  img {
+    display: none !important;
+  }
+}

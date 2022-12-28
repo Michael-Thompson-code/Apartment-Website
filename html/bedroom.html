@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Authorship: Michael Thompson 00894336 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/apartment_layout.css.css" />
+    <title>Bedroom</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1 class="center">Sandy and leslie's Apartment</h1>
+        <div class="floor-map">
+          <img
+            src="../media/images/apartmentfloorplan.jpg"
+            alt="Apartment floor paln"
+            usemap="#floorMap"
+          />
+          <map name="floorMap">
+            <area
+              alt="Bed Room"
+              title="Bed Room"
+              href="../html/bedroom.html"
+              coords="182,268,42,111"
+              shape="rect"
+            />
+            <area
+              alt="Living Room"
+              title="Living Room"
+              href="../htlm/livingroom.html"
+              coords="197,108,347,268"
+              shape="rect"
+            />
+            <area
+              alt="Kitchen Room"
+              title="Kitchen Room"
+              href="../html/kitchen.html"
+              coords="189,283,292,382"
+              shape="rect"
+            />
+            <area
+              alt="Dining Room"
+              title="Dining Room"
+              href="../html/diningroom.html"
+              coords="341,342,49"
+              shape="circle"
+            />
+            <area
+              alt="Second Bedroom"
+              title="Second Bedroom"
+              href="../html/bedroom.html"
+              coords="390,111,547,108,564,239,573,307,503,305,498,240,397,237"
+              shape="poly"
+            />
+          </map>
+        </div>
+        <ul class="links">
+          <li><a href="../apartment.html">Apartment</a></li>
+          <li><a href="../html/bedroom.html">Bedroom 1</a></li>
+          <li><a href="../html/bedroom.html">Bedroom 2</a></li>
+          <li><a href="../html/diningroom.html">Dining Room</a></li>
+          <li><a href="../html/kitchen.html">Kitchen</a></li>
+          <li class="last-link">
+            <a href="../html/livingroom.html">Living Room</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="sec-title center">Bedroom Detail</h2>
+        <div class="room-pic">
+          <img src="../media/images/bedroom_lg.jpg" alt="Kitchen" />
+        </div>
+      </div>
+      <div class="content-column">
+        <div class="apartment-service card">
+          <h2 class="sec-title">Apartment service:</h2>
+          <div class="card-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Service</th>
+                  <th>Day/Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gym</td>
+                  <td rowspan="2">
+                    Monday - Friday 6am - 10pm <br />
+                    Saturday 8am - 8pm <br />
+                    Sunday 8am - 5pm
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pool</td>
+                </tr>
+                <tr>
+                  <td>Laundry</td>
+                  <td>24/7</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="info">
+                    Please do not allow people you do not know to use these
+                    facilities.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        For more information contact:
+        <a href="">SamAndLeslie@example.com</a> or
+        <a href="">(905) 555-1234</a>
+        <p>&copy; Sandy and Leslie 2022</p>
+      </footer>
+    </div>
+  </body>
+</html>

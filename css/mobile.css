@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+  .floor-map img {
+    display: none;
+  }
+  .navigation .links {
+    flex-direction: column;
+  }
+  .navigation .links li {
+    border-right: none;
+    text-align: center;
+  }
+  .gallery-item {
+    margin: 0px 25px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
