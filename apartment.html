@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Authorship: Michael Thompson 00894336 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/apartment_layout.css.css" media="screen" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+
+    <title>Sandy and leslie's Apartment</title>
+    <style>
+      .gallery-body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .gallery-item {
+        margin-left: 30px;
+      }
+      .gallery-item h3 {
+        color: white;
+        background-color: rgb(253, 49, 34);
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1 class="center">Sandy and leslie's Apartment</h1>
+        <p class="center">Click a room for detailed view.</p>
+        <div class="floor-map">
+          <img
+            src="media/images/apartmentfloorplan.jpg"
+            alt="Apartment floor paln"
+            usemap="#floorMap"
+          />
+          <map name="floorMap">
+            <area
+              alt="Bed Room"
+              title="Bed Room"
+              href="html/bedroom.html"
+              coords="182,268,42,111"
+              shape="rect"
+            />
+            <area
+              alt="Living Room"
+              title="Living Room"
+              href="html/livingroom.html"
+              coords="197,108,347,268"
+              shape="rect"
+            />
+            <area
+              alt="Kitchen Room"
+              title="Kitchen Room"
+              href="html/kitchen.html"
+              coords="189,283,292,382"
+              shape="rect"
+            />
+            <area
+              alt="Dining Room"
+              title="Dining Room"
+              href="html/diningroom.html"
+              coords="341,342,49"
+              shape="circle"
+            />
+            <area
+              alt="Second Bedroom"
+              title="Second Bedroom"
+              href="html/bedroom.html"
+              coords="390,111,547,108,564,239,573,307,503,305,498,240,397,237"
+              shape="poly"
+            />
+          </map>
+        </div>
+        <ul class="links">
+          <li><a href="html/apartment.html">Apartment</a></li>
+          <li><a href="html/bedroom.html">Bedroom 1</a></li>
+          <li><a href="html/bedroom.html">Bedroom 2</a></li>
+          <li><a href="html/diningroom.html">Dining Room</a></li>
+          <li><a href="html/kitchen.html">Kitchen</a></li>
+          <li class="last-link">
+            <a href="html/livingroom.html">Living Room</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content-column">
+          <div class="welcom card">
+            <h2 class="sec-title">Welcome Message</h2>
+            <div class="card-content">
+              <audio controls>
+                <source src="media/audio/apartment.mp3" type="audio/mp3" />
+                Your browser does not support the audio tag.
+              </audio>
+              <p>
+                Hello. Welcome to our apartment. You'll really enjoy living
+                here. The rooms are spacious and the apartment building
+                amenities are fantastic. We look forward to hearing from you!
+              </p>
+            </div>
+          </div>
+          <div class="survey card">
+            <h2 class="sec-title">Survey</h2>
+            <div class="card-content">
+              <p>How did you find this apartment? Check any that apply:</p>
+              <form>
+                <input
+                  type="checkbox"
+                  id="web-search"
+                  name="source"
+                  value="Web Search"
+                />
+                <label for="web-search">Web Search</label>
+                <input
+                  type="checkbox"
+                  id="friend"
+                  name="source"
+                  value="Friend"
+                />
+                <label for="friend">Friend</label>
+                <input
+                  type="checkbox"
+                  id="newspaper"
+                  name="source"
+                  value="Newspaper"
+                />
+                <label for="newspaper">Newspaper</label>
+                <br />
+                <br />
+                <div>
+                  <input type="submit" value="Submit" />
+                  <input type="reset" value="Reset Form" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="content-column">
+          <div class="apartment-service card">
+            <h2 class="sec-title">Apartment service:</h2>
+            <div class="card-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Day/Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gym</td>
+                    <td rowspan="2">
+                      Monday - Friday 6am - 10pm <br />
+                      Saturday 8am - 8pm <br />
+                      Sunday 8am - 5pm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Pool</td>
+                  </tr>
+                  <tr>
+                    <td>Laundry</td>
+                    <td>24/7</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="info">
+                      Please do not allow people you do not know to use these
+                      facilities.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="content-column">
+          <div class="location card">
+            <h2 class="sec-title">Location</h2>
+            <div class="card-content">
+              <img src="./media/images/location.png" alt="Our location" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <h2 class="sec-title">Gallery</h2>
+        <div class="gallery-body">
+          <div class="gallery-item">
+            <h3>Balcony</h3>
+            <img src="media/images/thumbnails/balcony_sm.jpg" alt="Balcony" />
+          </div>
+          <div class="gallery-item">
+            <h3>Bathroom</h3>
+            <img src="media/images/thumbnails/bathroom_sm.jpg" alt="Bathroom" />
+          </div>
+          <div class="gallery-item">
+            <h3>Bedroom</h3>
+            <img src="media/images/thumbnails/bedroom_sm.jpg" alt="Bedroom" />
+          </div>
+          <div class="gallery-item">
+            <h3>Dining Room</h3>
+            <img src="media/images/thumbnails/diningroom_sm.jpg" alt="Dining" />
+          </div>
+          <div class="gallery-item">
+            <h3>Kitchen</h3>
+            <img src="media/images/thumbnails/kitchen_sm.jpg" alt="Kitchen" />
+          </div>
+          <div class="gallery-item">
+            <h3>Living Room</h3>
+            <img
+              src="media/images/thumbnails/livingroom_sm.jpg"
+              alt="Kitchen"
+            />
+          </div>
+        </div>
+      </div>
+      <footer>
+        For more information contact:
+        <a href="">SamAndLeslie@example.com</a> or
+        <a href="">(905) 555-1234</a>
+        <p>&copy; Sandy and Leslie 2022</p>
+      </footer>
+    </div>
+  </body>
+</html>
